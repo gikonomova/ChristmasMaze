@@ -27,12 +27,25 @@ namespace ChristmasMaze.Data.Classes
 
         public double CalculateItemClassStats(ItemClass itemClass)
         {
-            throw new NotImplementedException();
+            //switch (itemClass)
+            //{
+            //     case ItemClass.Weapon:   
+            //
+            return 0;
+        }
         }
 
         public void CollectItem(Item item)
         {
             this.Items.Add(item);
         }
+
+        //private double CalculateStats(List<Item> items)
+        //{
+        //    foreach (var item in items)
+        //    {
+                
+        //    }
+        //}
     }
 }
