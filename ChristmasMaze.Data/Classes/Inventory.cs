@@ -14,7 +14,7 @@ namespace ChristmasMaze.Data.Classes
 
         public Inventory()
         {
-                items = new List<Item>();
+            items = new List<Item>();
         }
         public List<Item> Items
         {
@@ -33,19 +33,20 @@ namespace ChristmasMaze.Data.Classes
             //
             return 0;
         }
-        }
+
 
         public void CollectItem(Item item)
         {
             this.Items.Add(item);
         }
 
-        //private double CalculateStats(List<Item> items)
-        //{
-        //    foreach (var item in items)
-        //    {
-                
-        //    }
-        //}
+
+        private double CalculateStats(List<Item> items)
+        {
+            foreach (var item in items)
+            {
+
+            }
+        }
     }
 }

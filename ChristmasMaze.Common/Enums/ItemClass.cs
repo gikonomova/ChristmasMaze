@@ -11,6 +11,5 @@ namespace ChristmasMaze.Common.Enums
         Weapon = 1,
         Armor = 2,
         Misc = 3,
-
     }
 }

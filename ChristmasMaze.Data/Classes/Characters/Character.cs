@@ -28,7 +28,7 @@ namespace ChristmasMaze.Data.Classes.Characters
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException("Name cannot be empty!");
+                    throw new ArgumentException("Name cannot be null or empty!");
                 }
             }
         }
