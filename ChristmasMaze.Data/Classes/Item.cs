@@ -26,7 +26,7 @@ namespace ChristmasMaze.Data.Classes
         {
             get
             {
-                return  this.Name;
+                return this.Name;
             }
             set
             {
@@ -39,7 +39,13 @@ namespace ChristmasMaze.Data.Classes
             get { return this.Type; }
             set
             {
-                throw new NotImplementedException();
+                if (value != ItemType.Magic ||
+                    value != ItemType.Normal ||
+                    value != ItemType.Rare ||
+                    value != ItemType.Unique)
+                {
+                    throw new ArgumentException("Unknown character!");
+                }
             }
         }
 
@@ -48,7 +54,10 @@ namespace ChristmasMaze.Data.Classes
             get { return this.AttackPoints; }
             set
             {
-                throw new NotImplementedException();
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Attack Points cannot be null or negative!");
+                }
             }
         }
 
@@ -57,7 +66,10 @@ namespace ChristmasMaze.Data.Classes
             get { return this.DefensePoints; }
             set
             {
-                throw new NotImplementedException();
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Defense Points cannot be null or negative!");
+                }
             }
         }
 

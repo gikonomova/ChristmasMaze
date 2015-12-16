@@ -39,6 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Characters\Character.cs" />
+    <Compile Include="Classes\Characters\Dwarf.cs" />
+    <Compile Include="Classes\Characters\Elf.cs" />
+    <Compile Include="Classes\Characters\Fox.cs" />
+    <Compile Include="Classes\Characters\Rabbit.cs" />
+    <Compile Include="Classes\Characters\Skeleton.cs" />
+    <Compile Include="Classes\Characters\Wolf.cs" />
     <Compile Include="Classes\Inventory.cs" />
     <Compile Include="Classes\Item.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
